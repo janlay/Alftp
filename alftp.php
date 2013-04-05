@@ -1,5 +1,7 @@
 <?php
 
+$icon_path = '/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/';
+
 function get_filesize($dsize) { 
     if (strlen($dsize) <= 9 && strlen($dsize) >= 7) { 
         $dsize = number_format($dsize / 1048576, 1); 
@@ -86,14 +88,14 @@ function output($wf, $list) {
 	if(count($list)) {
 	    krsort($list);
 	    foreach($list as $index=>$entry) {
-	        $wf->result($index, $entry["name"], $entry["name"], ($entry["flag"] == '-' ? get_filesize($entry["size"]) : 'Directory') .", available since ". $entry["lastmodifieddate"], $entry["flag"] == 'd' ? 'folder.png' : 'item.png');
+	        $wf->result($index, $entry["name"], $entry["name"], ($entry["flag"] == '-' ? get_filesize($entry["size"]) : 'Directory') .", available since ". $entry["lastmodifieddate"], $GLOBALS["icon_path"] . ($entry["flag"] == 'd' ? 'GenericFolderIcon.icns' : 'GenericDocumentIcon.icns'));
 	    }
 	} else {
 		if($GLOBALS["query"]) {
-		    $wf->result(-1, '', 'Item not found', 'Try to input less characters...', 'warning.png', false);
+		    $wf->result(-1, '', 'Item not found', 'Try to input less characters...', $GLOBALS["icon_path"] . 'AlertNoteIcon.icns', false);
 
 		} else {
-		    $wf->result(-1, '', 'Cannot parse list of the root directory', 'Please check the settings.', 'warning.png', false);
+		    $wf->result(-1, '', 'Cannot parse list of the root directory', 'Please check the settings.', $GLOBALS["icon_path"] . 'AlertCautionIcon.icns', false);
 
 		}
 	}
@@ -110,7 +112,7 @@ function on_error($errno, $errstr, $errfile, $errline) {
 		$desc = array_pop(explode('/', $errfile)) .":$errline - $desc";
 	}
 
-	$wf->result(-1, '', "Error found, check message below", $desc, 'error.png', false);
+	$wf->result(-1, '', "Error found, check message below", $desc, $GLOBALS["icon_path"] . 'AlertStopIcon.icns', false);
 	echo $wf->toxml();
 
 	exit($errno);
