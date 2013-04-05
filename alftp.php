@@ -117,6 +117,7 @@ function on_error($errno, $errstr, $errfile, $errline) {
 }
 
 set_error_handler('on_error');
+$query = trim($query);
 $wf = new Workflows();
 run($wf);
 
