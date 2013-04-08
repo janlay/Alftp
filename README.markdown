@@ -1,5 +1,5 @@
 # Alftp
-An FTP listing/searching workflow for Alfred v2.
+An FTP browser for Alfred 2.
 ![alftp-workflow](https://raw.github.com/janlay/alftp/master/screenshots/alftp-workflow.png)
 
 ## Features
