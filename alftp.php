@@ -133,10 +133,10 @@ function output($dir, $list) {
     		$path = "$path/";
     		$icon = $GLOBALS["icon_path"] . (getCachedItem($path) ? 'DropFolderIcon.icns' : 'GenericFolderIcon.icns');
     	} else {
-            $icon = "filetype:.". $info['extension'];
+            $icon = array_key_exists('extension', $info) ? "filetype:.". $info['extension'] : $GLOBALS["icon_path"] . 'GenericDocumentIcon.icns';
         }
 
-        $wf->result($index + 1, $path, $entry["name"], ($entry["flag"] == '-' ? get_filesize($entry["size"] . ', ') : '') ."Last modified: ". $entry["lastmodifieddate"], $icon, $entry["flag"] == '-');
+        $wf->result($index + 1, $path, $entry["name"], ($entry["flag"] == '-' ? get_filesize($entry["size"]) . '. ' : '') ."Last modified: ". $entry["lastmodifieddate"], $icon, $entry["flag"] == '-');
     }
 
 	echo $wf->toxml();
