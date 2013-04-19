@@ -19,8 +19,8 @@ Icon of cached directory has an overlay.
 ## How to install
 1. Download the workflow from [Dropbox](https://www.dropbox.com/s/fqszv79hp1ei6mg/Alftp.alfredworkflow).
 2. Just open the downloaded file, Alfred should open it. (Please make sure you have _Powerpack_ license installed.)
-3. click 'Open workflow folder' button, then update settings in `config.php`.
-3. Call Alfred with hotkey, type "`ftp`" (or other keyword you defined), Alftp works for you.
+3. Double click the first item in right panel of the workflow, click 'Open workflow folder' button, then update settings in `config.php`.
+4. Call Alfred with hotkey, type "`ftp`" (or other keyword you defined), Alftp works for you.
 
 ## Versions
 - v0.1
