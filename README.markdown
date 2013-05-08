@@ -8,6 +8,7 @@ An FTP browser for Alfred 2.
 - Fast browsing by caching directory
 - Copy path for file / directory (holding `⌘` key)
 - Generates command for downloading (holding `⌥` key)
+- Work together with [Douban Workflow](http://lucifr.com/2013/03/14/douban-workflow-for-alfred-v2/) (search movie)
 
 ## How it works
 Alftp connects to the FTP server, retrieves files & directories list in current directory. New items are shown on top.
@@ -28,10 +29,12 @@ Icon of cached directory has an overlay.
 - v0.2
   - Enable full site browsing.
   - Generate command for wget.
+- v0.3
+  - Search movie with Douban Workflow.
 
 ## Any plan?
+- <strike>Cooperate with Douban Movie or IMDB</strike>
 - Generate link for Xunlei
-- Cooperate with Douban Movie or IMDB
 
 ## Copyright & License
 Copyright © 2013 Janlay Wu <janlay@gmail.com>.
