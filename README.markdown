@@ -18,6 +18,8 @@ Icon of cached directory has an overlay.
 ![alft-cache](https://raw.github.com/janlay/alftp/master/screenshots/alftp-cache.png)
 
 ## How to install
+\* You may want to install Alftp from Alfred itself. if [Hatmaker](https://github.com/bpinto/hatmaker) has been installed, Just type `install Alftp` in Alfred's popup window. Type `outdated` to update Alftp to the latest version.
+
 1. Download the workflow from [Dropbox](https://www.dropbox.com/s/fqszv79hp1ei6mg/Alftp.alfredworkflow).
 2. Just open the downloaded file, Alfred should open it. (Please make sure you have _Powerpack_ license installed.)
 3. Double click the first item in right panel of the workflow, click 'Open workflow folder' button, then update settings in `config.php`.
