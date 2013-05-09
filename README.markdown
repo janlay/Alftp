@@ -34,6 +34,8 @@ Icon of cached directory has an overlay.
 - v0.3
   - Search movies with Douban Workflow.
   - Append release year to search keywords. (v0.3.1)
+  - Recognize movie title and release year properly. (v0.3.2)
+  - Auto remove title prefix which before an underline. (v0.3.2)
 
 ## Any plan?
 - <strike>Cooperate with Douban Movie or IMDB</strike>
