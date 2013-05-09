@@ -17,13 +17,15 @@ Alftp connects to the FTP server, retrieves files & directories list in current 
 Icon of cached directory has an overlay.
 ![alft-cache](https://raw.github.com/janlay/alftp/master/screenshots/alftp-cache.png)
 
-## How to install
+## Download
 \* You may want to install Alftp from Alfred itself. if [Hatmaker](https://github.com/bpinto/hatmaker) has been installed, Just type `install Alftp` in Alfred's popup window. Type `outdated` to update Alftp to the latest version.
+ -- or --
+Download the workflow from [Dropbox](https://www.dropbox.com/s/fqszv79hp1ei6mg/Alftp.alfredworkflow).
 
-1. Download the workflow from [Dropbox](https://www.dropbox.com/s/fqszv79hp1ei6mg/Alftp.alfredworkflow).
-2. Just open the downloaded file, Alfred should open it. (Please make sure you have _Powerpack_ license installed.)
-3. Double click the first item in right panel of the workflow, click 'Open workflow folder' button, then update settings in `config.php`.
-4. Call Alfred with hotkey, type "`ftp`" (or other keyword you defined), Alftp works for you.
+## Install & configure
+1. Just open the downloaded file, Alfred should open it. (Please make sure you have _Powerpack_ license installed.)
+2. Double click the first item in right panel of the workflow, click 'Open workflow folder' button, then update settings in `config.php`.
+3. Call Alfred with hotkey, type "`ftp`" (or other keyword you defined), Alftp works for you.
 
 ## Versions
 - v0.1
@@ -35,7 +37,7 @@ Icon of cached directory has an overlay.
   - Search movies with Douban Workflow.
   - Append release year to search keywords. (v0.3.1)
   - Recognize movie title and release year properly. (v0.3.2)
-  - Auto remove title prefix which before an underline. (v0.3.2)
+  - Auto remove title prefix which is before an underline. (v0.3.2)
 
 ## Any plan?
 - <strike>Cooperate with Douban Movie or IMDB</strike>
