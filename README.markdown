@@ -33,6 +33,7 @@ Icon of cached directory has an overlay.
   - Generate command for wget.
 - v0.3
   - Search movies with Douban Workflow.
+  - Append release year to search keywords. (v0.3.1)
 
 ## Any plan?
 - <strike>Cooperate with Douban Movie or IMDB</strike>
