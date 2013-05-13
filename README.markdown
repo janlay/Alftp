@@ -6,9 +6,9 @@ An FTP browser for Alfred 2.
 - Support FTP/FTPS/SFTP
 - browse full site in place
 - Fast browsing by caching directory
-- Copy path for file / directory (holding `⌘` key)
-- Generates command for downloading (holding `⌥` key)
-- Work together with [Douban Workflow](http://lucifr.com/2013/03/14/douban-workflow-for-alfred-v2/) (holding `⌃` key to search movies)
+- Copy path for file / directory (holding <kbd>⌘</kbd> key)
+- Generates command for downloading (holding <kbd>⌥</kbd> key)
+- Work together with [Douban Workflow](http://lucifr.com/2013/03/14/douban-workflow-for-alfred-v2/) (holding <kbd>⌃</kbd> key to search movies)
 
 ## How it works
 Alftp connects to the FTP server, retrieves files & directories list in current directory. New items are shown on top.
@@ -40,7 +40,7 @@ Download the workflow from [Dropbox](https://www.dropbox.com/s/fqszv79hp1ei6mg/A
   - Auto remove title prefix which is before an underline. (v0.3.2)
 
 ## Any plan?
-- <strike>Cooperate with Douban Movie or IMDB</strike>
+- ~~Cooperate with Douban Movie or IMDB</strike>~~
 - Generate link for Xunlei
 
 ## Copyright & License
