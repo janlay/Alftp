@@ -38,6 +38,7 @@ Download the workflow from [Dropbox](https://www.dropbox.com/s/fqszv79hp1ei6mg/A
   - Append release year to search keywords. (v0.3.1)
   - Recognize movie title and release year properly. (v0.3.2)
   - Auto remove title prefix which is before an underline. (v0.3.2)
+  - Fix bug & improve testing. (v0.3.3)
 
 ## Any plan?
 - ~~Cooperate with Douban Movie or IMDB</strike>~~
