@@ -142,7 +142,7 @@ function output($dir, $list) {
 	echo $wf->toxml();
 }
 
-$query = ltrim($query);
+$query = isset($query) ? ltrim($query) : "";
 if(!$query) $query = $root;
 if(!$query || $query[0] != '/')  $query = '/'. $query;
 
