@@ -71,7 +71,7 @@ function load($dir) {
 	foreach($lines as $line) {
 		if(empty($line)) continue;
 
-	    preg_match_all('/(?P<flag>[dl-])[rwx-]+\s+(?P<contents>\d+).+?(?P<size>\d+)\s+(?P<month>\w+)\s+(?P<date>\d+)\s+(?P<time_or_year>[\d:]+)\s+(?P<name>\S+)/', $line, $out, PREG_SET_ORDER);
+	    preg_match_all('/(?P<flag>[dl-])[rwx-]+\s+(?P<contents>\d+).+?(?P<size>\d+)\s+(?P<month>\w+)\s+(?P<date>\d+)\s+(?P<time_or_year>[\d:]+)\s+(?P<name>.+)/', $line, $out, PREG_SET_ORDER);
 
 	    // ignore invalid line 
 	    if(!count($out)) continue;
